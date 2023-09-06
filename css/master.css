@@ -73,6 +73,7 @@ h1.brand {
   -moz-background-size: cover;
   -o-background-size: cover;
   grid-area: hero;
+  transition: 5s;
 }
 
 
