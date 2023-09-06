@@ -141,6 +141,7 @@ figure img {
 footer {
   grid-area: footer;
   background-color: white;
+  max-height: 6rem;
 }
 
 .product-gallery {
