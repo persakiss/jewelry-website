@@ -78,12 +78,12 @@ h1.brand {
 
 body {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "header header"
-                       "hero hero"
-                       "aside section"
-                       "footer footer"
-                       "nav nav";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "header header header"
+                       "hero hero hero"
+                       "aside section section"
+                       "footer footer footer"
+                       "nav nav nav";
   grid-template-rows: auto 50vh 1fr 1fr auto;
                      } 
 
@@ -149,7 +149,7 @@ footer {
   padding-left: 1rem;
   padding-right: 2rem;
   display: grid;
-  grid-row-gap: 2rem;
+  grid-row-gap: 1rem;
   grid-column-gap: 1rem;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
@@ -157,14 +157,16 @@ footer {
                         "prod3 prod2";
 }
 
+
+.product-gallery article:hover {
+  background-color: #F5F5F2;
+  transition: 3s linear;
+}
+
 .product-gallery img {
   transition: transform 5s;
+  max-height: 7rem;
 }
-
-.product-gallery img:hover {
-  transform: scale(1.2);
-}
-
 
 
 
