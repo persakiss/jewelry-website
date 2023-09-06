@@ -109,7 +109,7 @@ aside h2, figcaption {
 
 
 h2 {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 h3 {
@@ -185,8 +185,12 @@ footer {
   background-color: #FEFEFE;
 }
 
+h3 {
+  font-size: 1.1rem;
+}
+
 p {
-  color: #BFBCB7 
+  color: #6E4028 
 }
 
 nav {
@@ -214,4 +218,6 @@ nav {
   color: black;
 }
 
-
+aside p {
+      font-family: 'IBM Plex Serif', serif;
+}
