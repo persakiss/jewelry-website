@@ -139,6 +139,7 @@ figure img {
 
 footer {
   grid-area: footer;
+  background-color: white;
 }
 
 .product-gallery {
