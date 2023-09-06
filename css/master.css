@@ -65,7 +65,7 @@ h1.brand {
 
 .hero {
   height: 50vh;
-  background-image: url(../images/model.png);
+  background-image: url(../images/model_bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -74,6 +74,19 @@ h1.brand {
   -o-background-size: cover;
   grid-area: hero;
   transition: 5s;
+  
+}
+
+.hero-model {
+  background-image: url(../images/model_sole.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100%;
+  transition: 3s;
 }
 
 
