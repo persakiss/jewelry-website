@@ -1,0 +1,200 @@
+/* Using a CSS Reset courtesy of joshwcomeau.com
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+
+
+body {
+  background-color: #F5F5F2;
+}
+
+header {
+  text-align: center;
+}
+
+h1.brand {
+  font-family: 'Playfair Display', serif;
+
+}
+
+
+.hero {
+  height: 50vh;
+  background-image: url(../images/model.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  grid-area: hero;
+}
+
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "header header"
+                       "hero hero"
+                       "aside section"
+                       "footer footer"
+                       "nav nav";
+} 
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+
+aside {
+  grid-area: aside;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+
+aside h2, figcaption {
+  color: #29231B;
+  font-family: 'Playfair Display', serif;
+}
+
+
+h2 {
+  padding-bottom: 2rem;
+}
+
+h3 {
+  color: #D3C8BF;
+  padding-bottom: 0.75rem;
+}
+
+hgroup {
+  padding-bottom: 2rem;
+}
+
+figcaption {
+  font-size: 0.7rem;
+  font-weight: bold
+}
+
+section {
+  grid-area: section;
+}
+
+
+
+
+
+figure img {
+  margin: auto;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.product-gallery {
+  text-align: center;
+  padding-top: 3rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  display: grid;
+  grid-column-gap: 1rem;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "prod1 prod4"
+                        "prod3 prod2";
+}
+
+
+
+
+.prod1 {
+  grid-area: prod1;
+}
+.prod2 {
+  grid-area: prod2;
+}
+.prod3 {
+  grid-area: prod3;
+}
+.prod4 {
+  grid-area: prod4;
+}
+
+.hero, aside, section  {
+  background-color: #FEFEFE;
+}
+
+p {
+  color: #BFBCB7 
+}
+
+nav {
+  height: 5rem;
+  background-color: #F2F0ED;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+}
+
+.nav-item  {
+}
+
+
