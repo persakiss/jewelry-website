@@ -62,8 +62,7 @@ h1.brand {
 
 }
 
-
-.hero {
+.hero-bg {
   height: 50vh;
   background-image: url(../images/model_bg.png);
   background-size: cover;
@@ -72,8 +71,25 @@ h1.brand {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  grid-area: hero;
   transition: 3s;
+}
+
+.hero {
+
+  grid-area: hero;
+  overflow: hidden;
+}
+
+@keyframes slide {
+  0% {
+      transform: scale(1.03);
+  }
+  50% {
+      transform: scale(1.0);
+  }
+  100% {
+      transform: scale(1.03);
+  }
 }
 
 .hero-model {
@@ -86,6 +102,7 @@ h1.brand {
   -o-background-size: cover;
   height: 100%;
   transition: 5s;
+  animation: slide 20s ease-in-out infinite;
 }
 
 
