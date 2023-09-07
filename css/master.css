@@ -64,6 +64,7 @@ h1.brand {
 
 .hero-bg {
   height: 50vh;
+  will-change: transform;
   background-image: url(../images/model_bg.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -97,6 +98,7 @@ h1.brand {
 
 
 .hero-model {
+  will-change: transform;
   background-image: url(../images/model_sole.png);
   background-size: cover;
   background-repeat: no-repeat;
