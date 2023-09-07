@@ -92,6 +92,10 @@ h1.brand {
   }
 }
 
+
+
+
+
 .hero-model {
   background-image: url(../images/model_sole.png);
   background-size: cover;
@@ -136,6 +140,8 @@ aside h2, figcaption {
   color: #29231B;
   font-family: 'Playfair Display', serif;
 }
+
+
 
 
 h2 {
@@ -188,9 +194,20 @@ footer {
 }
 
 
+.product-gallery article:nth-child(4) {
+  background-color: #F5F5F2;
+}
+
+.product-gallery article:nth-child(4):hover {
+  background-color: white;
+}
+
+
+
 .product-gallery article:hover {
   background-color: #F5F5F2;
   transition: 3s linear;
+  text-decoration-line: underline;
 }
 
 .product-gallery img {
