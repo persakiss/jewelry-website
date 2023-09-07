@@ -15,8 +15,9 @@
   <!-- Google Font for Playfair, in Logo -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;200&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;200&family=Playfair+Display&family=Nunito+Sans:opsz@6..12&display=swap"
+    rel="stylesheet">
 
   <title>Mangata & Gallo</title>
 
@@ -29,11 +30,13 @@
     <h1 class="brand">MANGATA & GALLO</h1>
   </header>
   <nav>
-    <a href="#" class="nav-item"><i data-feather="home"></i></a>
-    <a href="#" class="nav-item"><i data-feather="grid"></i></a>
-    <a href="#" class="nav-item"><i data-feather="heart"></i></a>
-    <a href="#" class="nav-item"><i data-feather="shopping-bag"></i></a>
-    <a href="#" class="nav-item"><i data-feather="user"></i></a>
+    <ul>
+      <li><a href="#" class="nav-item"><i data-feather="home"></i><h4>store</h4></a></li>
+      <li><a href="#" class="nav-item"><i data-feather="grid"></i><h4>category</h4></a></li>
+      <li><a href="#" class="nav-item"><i data-feather="heart"></i><h4>loved</h4></a></li>
+      <li><a href="#" class="nav-item"><i data-feather="shopping-bag"></i><h4>basket</h4></a></li>
+      <li><a href="#" class="nav-item"><i data-feather="user"></i><h4>profile</h4></a></li>
+    </ul>
   </nav>
   <div class="hero">
     <div class="hero-bg">
@@ -70,6 +73,7 @@
     <article class="prod4">
       <figure>
         <img src="images/products/bracelet1.png" />
+        <div class="thing"></div>
         <figcaption>bracelets</figcaption>
       </figure>
     </article>
