@@ -125,11 +125,11 @@ h4 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: ". header nav nav nav nav nav ."
                         "hero hero hero hero hero hero hero hero"
-                        "break break break break break break break break"
+                        ". . . break break . . ."
                         "section section section section section section section section"
                         "aside aside aside aside aside aside aside aside"
                         "footer footer footer footer footer footer footer footer";
-    grid-template-rows: auto 50vh 1px 1fr 1fr auto; 
+    grid-template-rows: auto 50vh 50px 1fr 1fr auto; 
   }
   header {
     line-height: 0.9;
@@ -168,10 +168,39 @@ h4 {
     display: none;
   }
 
-  .product-gallery {
-    
+  .break {
+    background-color: #FEFEFE;
+   grid-area: break;
+   background-color: brown;
   }
 
+  br {
+    background-color: brown;
+  }
+
+  .product-gallery {
+    display: grid;
+    grid-template-areas: ". prod1 prod2 prod3 prod4 .";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+     .prod1 {
+    grid-area: prod1;
+  }
+  
+  .prod2 {
+    grid-area: prod2;
+  }
+  
+  .prod3 {
+    grid-area: prod3;
+  }
+  
+  .prod4 {
+    grid-area: prod4;
+  }
+ 
   .product-gallery img {
     max-height: 10rem;
   }
@@ -222,8 +251,12 @@ nav ul {
     text-decoration-line: underline;
   }
 
+  .product-gallery article {
+    padding-bottom: 1rem;
+  }
+
   .product-gallery img {
-    max-height: 7rem;
+    max-height: 6rem;
   }
 
   nav ul {
