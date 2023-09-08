@@ -449,6 +449,7 @@ nav ul {
 
   .product-gallery article {
     padding-bottom: 1rem;
+    transition: 3s linear;
   }
 
   .product-gallery img {
@@ -456,7 +457,8 @@ nav ul {
   }
 
 
-
+/* Things not to show FOR NOW -- have to find a way to include them later. 
+ * Some of these don't even contain anything yet */
   .story, .mov, .collections-small, .collections {
     display: none;
   }
