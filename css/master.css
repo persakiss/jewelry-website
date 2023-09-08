@@ -166,8 +166,14 @@ h1.brand {
                         "break break break break break break break break"
                         ". section section section section section section ."
                         ". aside1 aside1 aside1 aside2 aside2 aside2 ."
+                        ". more more more more more more ."
                         "footer footer footer footer footer footer footer footer";
-    grid-template-rows: auto 50vh 50px 1fr 1fr auto; 
+    grid-template-rows: auto 50vh 50px 1fr 1fr 1fr 10rem; 
+  }
+
+  .more {
+    grid-area: more;
+    padding: 0 2rem;
   }
 
   .mission-statement {
@@ -255,6 +261,47 @@ h1.brand {
 
   aside > hgroup > h3 {
     display: none
+  }
+
+  footer {
+    background-color: #464645;
+    color: white;
+    display: grid;
+    grid-template-areas: ". col1 col2 col2 col3 col3 .";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  }
+
+  .col1 {
+    grid-area: col1;
+  }
+
+  .col2 {
+    grid-area: col2;
+  }
+
+  .col3 {
+    grid-area: col3;
+  }
+
+  footer ul li.brand {
+    font-family: 'Playfair Display';
+    text-align: right;
+  }
+
+  .slogan {
+    padding-top: 0.4rem;
+    font-size: 0.7rem;
+  }
+
+  .copyright {
+    padding-top: 0.4rem;
+    font-size: 0.7rem
+  }
+
+  footer ul {
+    padding-top: 2rem;
+    list-style-type: none;
+    font-family: 'Nunito Sans', sans-serif;
   }
 }
 /* End shared non-mobile attributes */
@@ -375,7 +422,15 @@ nav ul {
   }
 
   .nav-item {
-  };
+  }
+
+  footer {
+    background-color: white;
+  }
+
+  footer ul {
+    display: none
+  }
 } 
 /* Mobile screens end */
 
@@ -400,6 +455,10 @@ aside {
 
 aside h2, figcaption {
   color: #29231B;
+  font-family: 'Playfair Display', serif;
+}
+
+.more h2 {
   font-family: 'Playfair Display', serif;
 }
 
@@ -438,8 +497,6 @@ figure img {
 
 footer {
   grid-area: footer;
-  background-color: white;
-  max-height: 6rem;
 }
 
 
