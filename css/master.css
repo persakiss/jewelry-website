@@ -123,6 +123,25 @@ h1.brand {
   padding-top: 2rem;
 }
 
+
+  .img1 {
+    grid-area: img1;
+  }
+
+  img2 {
+    grid-area: img2;
+  }
+
+  .txt1 {
+    grid-area: txt1;
+  }
+
+  .txt2 {
+    grid-area: txt2;
+  }
+
+
+
 /* XL Screens */
 @media only screen and (min-width: 1243px) {
   .hero-bg {
@@ -151,6 +170,8 @@ h1.brand {
   .hero-bg {
     height: 70vh;
   }
+
+
 }
 
 
@@ -176,41 +197,8 @@ h1.brand {
     grid-template-rows: auto 50vh 50px 1fr 1fr auto auto auto 1fr 1fr 10rem; 
   }
 
-  .story {
-    background-color: white;
-    grid-area: story;
-    display: grid;
-    grid-template-areas: 
-                          ". txt1 txt1 txt1 img1 img1 ."
-                          ". txt2 img2 img2 img1 img1 ."
-                          ". txt2 img2 img2 txt3 txt3 .";
-                        }
-
-
-
-  .img1 {
-    grid-area: img1;
-  }
-
-  img2 {
-    grid-area: img2;
-  }
-
-  .txt1 {
-    grid-area: txt1;
-    background-color: #E7DAC3;
-  }
-
-  .txt2 {
-    grid-area: txt2;
-    background-color: #E7DAC3;
-  }
-
-  .txt3 {
-    grid-area: txt3;
-    background-color: #E7DAC3;
-  }
-
+  
+ 
   
 
   .more {
@@ -340,6 +328,7 @@ h1.brand {
   }
 
   footer {
+    min-height: 10rem;
     background-color: #464645;
     color: white;
     display: grid;
