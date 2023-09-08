@@ -166,14 +166,86 @@ h1.brand {
                         "break break break break break break break break"
                         ". section section section section section section ."
                         ". aside1 aside1 aside1 aside2 aside2 aside2 ."
-                        ". more more more more more more ."
+                        ". story story story story story story ."
+                        ". story story story story story story ."
+                        ". story story story story story story ."
+                        "fill fill fill fill fill fill fill fill"
+                        "mtop more more more more more colls2 ."
+                        "mov colls colls colls colls colls colls2 ."
                         "footer footer footer footer footer footer footer footer";
-    grid-template-rows: auto 50vh 50px 1fr 1fr 1fr 10rem; 
+    grid-template-rows: auto 50vh 50px 1fr 1fr auto auto auto 1fr 1fr 10rem; 
   }
+
+  .story {
+    background-color: white;
+    grid-area: story;
+    display: grid;
+    grid-template-areas: 
+                          ". txt1 txt1 txt1 img1 img1 ."
+                          ". txt2 img2 img2 img1 img1 ."
+                          ". txt2 img2 img2 txt3 txt3 .";
+                        }
+
+
+
+  .img1 {
+    grid-area: img1;
+  }
+
+  img2 {
+    grid-area: img2;
+  }
+
+  .txt1 {
+    grid-area: txt1;
+    background-color: #E7DAC3;
+  }
+
+  .txt2 {
+    grid-area: txt2;
+    background-color: #E7DAC3;
+  }
+
+  .txt3 {
+    grid-area: txt3;
+    background-color: #E7DAC3;
+  }
+
+  
 
   .more {
     grid-area: more;
     padding: 0 2rem;
+  }
+
+  .mov {
+    grid-area: mov;
+    height: 100%;
+    background-color: #464645;
+    bottom: 0;
+  }
+
+  .collections {
+    grid-area: colls;
+    padding: 0 2rem;
+    background-color: blanchedalmond;
+  }
+
+  .collections-small {
+    grid-area: colls2;
+    background-color: antiquewhite;
+    padding: 1rem;
+
+  }
+
+  .collections-small > figure.quote {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size-adjust: 0.4;
+    padding-top: 1rem;
+  }
+
+  .collections-small > figure.quote > figcaption {
+   padding-top: 3rem 
   }
 
   .mission-statement {
@@ -263,6 +335,10 @@ h1.brand {
     display: none
   }
 
+  .more img {
+    max-height: 4rem;
+  }
+
   footer {
     background-color: #464645;
     color: white;
@@ -346,6 +422,7 @@ nav ul {
   grid-template-rows: auto 50vh 1fr 1fr auto;
     }
 
+
     .legacy {
       display: none;
     }
@@ -390,6 +467,12 @@ nav ul {
   }
 
 
+
+  .story, .mov, .collections-small, .collections {
+    display: none;
+  }
+
+
   nav ul {
     height: 5rem;
     justify-content: space-between;
@@ -422,6 +505,10 @@ nav ul {
   }
 
   .nav-item {
+  }
+
+  .more {
+    display: none;
   }
 
   footer {
@@ -482,7 +569,7 @@ figcaption {
   font-weight: bold
 }
 
-section {
+.product-gallery {
   grid-area: section;
   height: 100%
 }
@@ -513,7 +600,7 @@ footer {
   grid-area: prod4;
 }
 
-.hero, aside, section  {
+.hero, aside, .product-gallery  {
   background-color: #FEFEFE;
 }
 
