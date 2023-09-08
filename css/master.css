@@ -165,9 +165,17 @@ h1.brand {
                         "hero hero hero hero hero hero hero hero"
                         "break break break break break break break break"
                         ". section section section section section section ."
-                        ". aside aside aside aside aside aside ."
+                        ". aside1 aside1 aside1 aside2 aside2 aside2 ."
                         "footer footer footer footer footer footer footer footer";
     grid-template-rows: auto 50vh 50px 1fr 1fr auto; 
+  }
+
+  .mission-statement {
+    grid-area: aside1;
+  }
+
+  .legacy {
+    grid-area: aside2;
   }
 
   .empty-cell {
@@ -244,6 +252,10 @@ h1.brand {
   .product-gallery > article > figure > figcaption {
     display: none;
   }
+
+  aside > hgroup > h3 {
+    display: none
+  }
 }
 /* End shared non-mobile attributes */
 
@@ -285,6 +297,10 @@ nav ul {
                        "footer footer footer"
                        "nav nav nav";
   grid-template-rows: auto 50vh 1fr 1fr auto;
+    }
+
+    .legacy {
+      display: none;
     }
 
   .product-gallery {
