@@ -48,6 +48,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* RESET OVER */
+
+/* Universal values */
 
 body {
   background-color: #F5F5F2;
@@ -57,13 +60,14 @@ header {
   text-align: center;
 }
 
-h1.brand {
-  font-family: 'Playfair Display', serif;
-
+hr {
+  border-top: 10px solid #E7DAC3;
+  border-radius: 5px;
 }
 
-h4 {
-  
+
+h1.brand {
+  font-family: 'Playfair Display', serif;
 }
 
 
@@ -101,10 +105,6 @@ h4 {
   }
 }
 
-
-
-
-
 .hero-model {
   will-change: transform;
   background-image: url(../images/model_sole.png);
@@ -119,18 +119,63 @@ h4 {
   animation: slide 20s ease-in-out infinite;
 }
 
+.product-gallery {
+  padding-top: 2rem;
+}
+
+/* XL Screens */
+@media only screen and (min-width: 1243px) {
+  .hero-bg {
+   height: 90vh 
+  }
+
+  .product-gallery img {
+    max-width: 15vw;
+  }
+
+}
+
+/* Larger screens begin */
+@media only screen and (min-width: 1147px) and (max-width: 1242px) {
+
+  .hero-bg {
+    height: 70vh;
+  }
+
+}
+/* Larger screens end */
+
+
+
+@media only screen and (min-width: 953px) and (max-width: 1146px) {
+  .hero-bg {
+    height: 70vh;
+  }
+}
+
+
+/* For mostly shared attributes of non-mobile */ 
 @media only screen and (min-width: 761px) {
+
   body {
+      background-image: linear-gradient(to bottom, #F5F5F2 0%, #F5F5F2 20vh, white 20vh);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: ". header nav nav nav nav nav ."
                         "hero hero hero hero hero hero hero hero"
-                        ". . . break break . . ."
-                        "section section section section section section section section"
-                        "aside aside aside aside aside aside aside aside"
+                        "break break break break break break break break"
+                        ". section section section section section section ."
+                        ". aside aside aside aside aside aside ."
                         "footer footer footer footer footer footer footer footer";
     grid-template-rows: auto 50vh 50px 1fr 1fr auto; 
   }
+
+  .empty-cell {
+    background-color: white;
+    grid-area: empt;
+  }
+
+
   header {
     line-height: 0.9;
     text-align: right;
@@ -171,47 +216,65 @@ h4 {
   .break {
     background-color: #FEFEFE;
    grid-area: break;
-   background-color: brown;
+   padding-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+  grid-template-areas: ". . . line line . . .";
   }
 
-  br {
-    background-color: brown;
+  .break > hr {
+    grid-area: line;
   }
 
   .product-gallery {
-    display: grid;
-    grid-template-areas: ". prod1 prod2 prod3 prod4 .";
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    justify-content: center;
   }
 
-     .prod1 {
-    grid-area: prod1;
-  }
-  
-  .prod2 {
-    grid-area: prod2;
-  }
-  
-  .prod3 {
-    grid-area: prod3;
-  }
-  
-  .prod4 {
-    grid-area: prod4;
-  }
- 
   .product-gallery img {
-    max-height: 10rem;
+    max-height: 9rem;
+  }
+
+  /* hide mobile images */
+  .product-gallery > article > figure > img[src*="_nbg"] {
+    display: none;
+  }
+
+  .product-gallery > article > figure > figcaption {
+    display: none;
   }
 }
+/* End shared non-mobile attributes */
+
+/* Medium screens begin */
+@media only screen and (min-width: 761px) and (max-width: 1146px) {
+
+  .product-gallery > article {
+  }
+
+
+  .product-gallery > article > figure > figcaption {
+    display: none;
+  }
+
+  .product-gallery article {
+    max-width: 20vw;
+  }
+
+  .product-gallery img {
+    max-width: 20vw;
+  }
+}
+/* Medium screens end */
+
 
 nav ul {
   list-style-type: none;
 }
 
 
-/* MOBILE ISH */
+/* Mobile screens  */
 @media only screen and (max-width: 760px) {
   body {
   display: grid;
@@ -236,6 +299,10 @@ nav ul {
     grid-template-areas: "prod1 prod4"
                         "prod3 prod2";
   }
+
+  .product-gallery > article > figure > img[src*="_wbg"] {
+    display: none;
+  }
   
   .product-gallery article:nth-child(4) {
     background-color: #F5F5F2;
@@ -259,20 +326,19 @@ nav ul {
     max-height: 6rem;
   }
 
+
   nav ul {
     height: 5rem;
+    justify-content: space-between;
     background-color: #F2F0ED;
     bottom: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
     position: fixed;
     bottom: 0;
     z-index: 1;
     width: 100%;
     align-items: center;
     text-align: center;
-    justify-items: center;
   }
 
   .nav-item {
@@ -286,7 +352,6 @@ nav ul {
   }
 
   nav ul li {
-
   }
 
   nav ul li a h4 {
@@ -295,11 +360,8 @@ nav ul {
 
   .nav-item {
   };
-
 } 
-
-
-/* end */
+/* Mobile screens end */
 
 
 
