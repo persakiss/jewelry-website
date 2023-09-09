@@ -459,7 +459,7 @@ nav ul {
 
 /* Things not to show FOR NOW -- have to find a way to include them later. 
  * Some of these don't even contain anything yet */
-  .story, .mov, .collections-small, .collections {
+  .story, .mov, .collections-small, .collections, .more {
     display: none;
   }
 
@@ -498,9 +498,6 @@ nav ul {
   .nav-item {
   }
 
-  .more {
-    display: none;
-  }
 
   footer {
     background-color: white;
