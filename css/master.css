@@ -609,7 +609,9 @@ nav ul {
     font-family: 'Nunito Sans', sans-serif;
   }
 
-
+  .siae {
+    display: none;
+  }
 
   :root {
     --nav-height: 5rem;
