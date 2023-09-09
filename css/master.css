@@ -406,11 +406,15 @@ nav ul {
   grid-template-areas: "header header header"
                        "hero hero hero"
                        "aside section section"
+                       "space space space"
+                       "more more story-top"
+                       "story story story"
                        "footer footer footer"
                        "nav nav nav";
-  grid-template-rows: auto 50vh 1fr 1fr auto;
+  grid-template-rows: auto 50vh 1fr 10vh 1fr 1fr 1fr auto;
     }
 
+  
 
     .legacy {
       display: none;
@@ -455,11 +459,39 @@ nav ul {
   .product-gallery img {
     max-height: 6rem;
   }
+  
+  .space {
+    grid-area: space;
+    background-color: white; 
+  }
+
+  .story-top {
+    background-image: url('../images/story/watch.png');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    grid-area: story-top;
+  }
+
+  .more {
+    padding: 3rem 2rem;
+    max-height: 22rem;
+    border: 1px solid black;
+    grid-area: more;
+  }
+
+  .story {
+    grid-area: story;
+  }
 
 
 /* Things not to show FOR NOW -- have to find a way to include them later. 
  * Some of these don't even contain anything yet */
-  .story, .mov, .collections-small, .collections, .more {
+  hr, story, .mov, .collections-small, .collections {
     display: none;
   }
 
