@@ -408,7 +408,7 @@ nav ul {
                        "aside section section"
                        "space space space"
                        "more more story-top"
-                       "story story story"
+                       "story-bot story story"
                        "footer footer footer"
                        "nav nav nav";
   grid-template-rows: auto 50vh 1fr 10vh 1fr 1fr 1fr auto;
@@ -472,6 +472,8 @@ nav ul {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
 
 
     grid-area: story-top;
@@ -480,11 +482,23 @@ nav ul {
   .more {
     padding: 3rem 2rem;
     max-height: 22rem;
-    border: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
     grid-area: more;
   }
 
+  .story-bot {
+    background-image: url('../images/story/winona.png');
+    background-attachment: fixed;
+    grid-area: story-bot;
+    padding: 3rem 2rem;
+    max-height: 22rem;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+  }
+
   .story {
+    border-bottom: 1px solid black;
     grid-area: story;
   }
 
