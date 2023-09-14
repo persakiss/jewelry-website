@@ -413,8 +413,6 @@ h1.brand {
 /* Medium screens begin */
 @media only screen and (min-width: 761px) and (max-width: 1146px) {
 
-  .product-gallery > article {
-  }
 
 
   .product-gallery > article > figure > figcaption {
@@ -589,15 +587,11 @@ nav ul {
     padding-right: 2rem;
   }
 
-  nav ul li {
-  }
 
   nav ul li a h4 {
     display: none;
   }
 
-  .nav-item {
-  }
 
   footer {
     background-color: #464645;
@@ -634,8 +628,18 @@ nav ul {
     font-size: 0.7rem
   }
 
+  .more > img:nth-last-child(1) {
+    display: inline;
+  }
 
- 
+  .story > img:nth-last-child(1) {
+    display: inline;
+  }
+
+  .story > img:nth-last-child(2) {
+    max-width: 7rem;
+    padding-left: 0.3rem;
+  }
 
     footer ul {
     padding-top: 6rem;
